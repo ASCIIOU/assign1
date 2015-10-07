@@ -1,10 +1,65 @@
-/* please implement your assign1 code in this file. */
+int x, y, z, m, n, r;
+
+PImage Img0;
+PImage Img1;
+PImage Img2;
+PImage Img3;
+PImage Img4;
+PImage Img5;
+
+
 
 void setup () {
-  size(640,480) ;  // must use this size.
-  // your code
+  size(640,480) ;  
+  
+  n=0;
+  r=640;
+
+
+  x=floor(random(201));
+  y=floor(random(50, 540));
+  z=floor(random(50, 440));
+  m=0;
+  
+  
+  Img0 = loadImage("fighter.png"); 
+  Img1 = loadImage("hp.png");
+  Img2 = loadImage("treasure.png");
+  Img3 = loadImage("enemy.png");
+  Img4 = loadImage("bg1.png");
+  Img5 = loadImage("bg2.png");
+  
+ 
+
+  
 }
 
 void draw() {
-  // your code
+
+
+ 
+
+  
+  image(Img4, n, 0);
+  image(Img5, r, 0);
+ 
+   n++;
+   r++;
+   if(n>640){n=-640;n++;}
+   if(r>640){r=-640;r++;}
+   println(n);
+ 
+   stroke(225, 0, 0);
+ fill(225, 0, 0);
+ rect(25, 25, x, 20);
+  
+  
+  image(Img0, 580, 240);
+  image(Img1, 20, 20);
+  image(Img2, y, z);
+  image(Img3, m, 100);
+  
+  m+=3;
+  m %=640;
+  
 }
