@@ -22,12 +22,12 @@ void setup () {
   m=0;
   
   
-  Img0 = loadImage("fighter.png"); 
-  Img1 = loadImage("hp.png");
-  Img2 = loadImage("treasure.png");
-  Img3 = loadImage("enemy.png");
-  Img4 = loadImage("bg1.png");
-  Img5 = loadImage("bg2.png");
+  Img0 = loadImage("img/fighter.png"); 
+  Img1 = loadImage("img/hp.png");
+  Img2 = loadImage("img/treasure.png");
+  Img3 = loadImage("img/enemy.png");
+  Img4 = loadImage("img/bg1.png");
+  Img5 = loadImage("img/bg2.png");
   
  
 
