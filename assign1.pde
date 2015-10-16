@@ -47,7 +47,6 @@ void draw() {
    r++;
    if(n>640){n=-640;n++;}
    if(r>640){r=-640;r++;}
-   println(n);
  
    stroke(225, 0, 0);
  fill(225, 0, 0);
